@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name="RCJO2015RRL">
+    <static>1</static>
+
+  <link name='link1'>	
+	<inertial>
+		<mass>100</mass>
+		<inertia>10</inertia>
+	</inertial>
+          <pose>0 0 0 0 0 0</pose>
+
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+	<scale>1 1 1</scale>
+		  <uri>model://RCJO2015RRL/RCJO2015RRL_Field_Tele.dae</uri>
+	      </mesh>
+	    </geometry>
+		<surface>
+		<friction>
+		   <ode>
+		     <mu>0.5</mu>
+		     <mu2>0.5</mu2>
+		     <slip1>0.1</slip1>
+		     <slip2>0.1</slip2>
+		   </ode>
+		</friction>
+		</surface>
+          </collision>
+
+          <visual name='visual'>
+            <geometry>
+               <mesh>
+	<scale>1 1 1</scale>
+		  <uri>model://RCJO2015RRL/RCJO2015RRL_Field_Tele.dae</uri>
+	      </mesh>
+            </geometry>
+          </visual>
+    </link>
+
+  <link name='link2'>	
+  <pose>10 0 0 0 0 0</pose>
+	<inertial>
+		<mass>100</mass>
+		<inertia>10</inertia>
+	</inertial>
+		  <pose>0 0 0 0 0 0</pose>
+		  
+		  <collision name='collision'>
+			<geometry>
+			  <mesh>
+	<scale>1 1 1</scale>
+		  <uri>model://RCJO2015RRL/RCJO2015RRL_Field_Auto.dae</uri>
+		  </mesh>
+		</geometry>
+		<surface>
+		<friction>
+		   <ode>
+			 <mu>0.5</mu>
+			 <mu2>0.5</mu2>
+			 <slip1>0.1</slip1>
+			 <slip2>0.1</slip2>
+		   </ode>
+		</friction>
+		</surface>
+		  </collision>
+		  
+		  <visual name='visual'>
+			<geometry>
+			   <mesh>
+	<scale>1 1 1</scale>
+		  <uri>model://RCJO2015RRL/RCJO2015RRL_Field_Auto.dae</uri>
+		  </mesh>
+			</geometry>
+		  </visual>
+	</link>
+	
+ </model>
+</sdf>

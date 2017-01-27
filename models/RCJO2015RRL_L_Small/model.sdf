@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name="RCJO2015RRL_L_Small">
+    <static>0</static>
+
+ <link name='link'>
+	
+	<inertial>
+		<mass>10</mass>
+		<inertia>10</inertia>
+	</inertial>
+          <pose>-2.350 2.5550 0.5642 0 0 0</pose>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+	<scale>1 1 1</scale>
+		  <uri>model://RCJO2015RRL/RCJO2015RRL_L_Small.dae</uri>
+	      </mesh>
+	    </geometry>
+		<surface>
+		<friction>
+		   <ode>
+		     <mu>0.5</mu>
+		     <mu2>0.5</mu2>
+		     <slip1>1</slip1>
+		     <slip2>1</slip2>
+		   </ode>
+		</friction>
+		</surface>
+          </collision>
+
+          <visual name='visual'>
+            <geometry>
+               <mesh>
+	<scale>1 1 1</scale>
+		  <uri>model://RCJO2015RRL/RCJO2015RRL_L_Small.dae</uri>
+	      </mesh>
+            </geometry>
+          </visual>
+</link>
+
+
+ </model>
+</sdf>
