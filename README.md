@@ -23,4 +23,3 @@ You can change the world file name with files that be shown by following command
 See [Wiki](https://github.com/m-shimizu/RoboCupJO_RRL_Field/wiki)
     
 #### Changed 29/Jan/2017
-(https://github.com/m-shimizu/RoboCupJO_RRL_Field/wiki
