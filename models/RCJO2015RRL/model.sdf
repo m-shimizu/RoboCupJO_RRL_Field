@@ -39,6 +39,7 @@
           </visual>
     </link>
 
+<!--
   <link name='link2'>	
   <pose>10 0 0 0 0 0</pose>
 	<inertial>
@@ -75,6 +76,7 @@
 			</geometry>
 		  </visual>
 	</link>
+-->
 	
  </model>
 </sdf>
